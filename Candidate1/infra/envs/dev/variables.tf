@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "Which AWS region are we provisioning resources in?"
-  default     = "us-east-1"
+  value = "us-west-1"
 }
 
 variable "instance_name" {
