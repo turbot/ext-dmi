@@ -27,10 +27,10 @@ resource "aws_instance" "ec2_instance" {
     sudo ./aws/install
 
     # Clone the specified GitHub repository
-    git clone https://github.com/agenerette/candidate1-ext-dmi
+    git clone https://github.com/agenerette/ext-dmi
 
     # Navigate to the cloned repo directory
-    cd candidate1-ext-dmi
+    cd ext-dmi
 
     # Run the Python script in dry-run mode and save the output to /root/script_output.log
     python3 list_and_tag_buckets.py > /root/script_output.log 2>&1
