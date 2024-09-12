@@ -27,15 +27,15 @@ resource "aws_instance" "ec2_instance" {
     sudo ./aws/install
 
     # Clone the specified GitHub repository
-    git clone https://github.com/agenerette/ext-dmi
+    git clone https://github.com/turbot/ext-dmi.git
 
     # Navigate to the cloned repo directory
-    cd ext-dmi
+    cd ext-dmi\Candidate1
 
     # Run the Python script in dry-run mode and save the output to /root/script_output.log
-    python3 list_and_tag_buckets.py > /root/script_output.log 2>&1
+    python3 list_and_tag_buckets.py > ./script_output.log 2>&1
 
-    echo "Script executed and output saved to /root/script_output.log"
+    echo "Script executed and output saved to ./script_output.log"
   EOF
 
   # Security group allowing SSH
