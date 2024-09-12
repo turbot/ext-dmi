@@ -8,7 +8,7 @@ variable "instance_type" {
 
 variable "ami_id" {
   description = "AMI to use to build EC2 instance"
-  default     = "ami-007868005aea67c54" # Amazon Linux 2 AMI
+  default     = "ami-0147bd0a180d521bd" # Amazon Linux 2 AMI
 }
 
 variable "subnet_id" {
