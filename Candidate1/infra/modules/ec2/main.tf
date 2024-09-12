@@ -30,10 +30,10 @@ resource "aws_instance" "ec2_instance" {
     git clone https://github.com/agenerette/candidate1-ext-dmi
 
     # Navigate to the cloned repo directory
-    cd ext-dmi
+    cd candidate1-ext-dmi
 
     # Run the Python script in dry-run mode and save the output to /root/script_output.log
-    python3 list_and_tag_buckets.py --dry-run > /root/script_output.log 2>&1
+    python3 list_and_tag_buckets.py > /root/script_output.log 2>&1
 
     echo "Script executed and output saved to /root/script_output.log"
   EOF
