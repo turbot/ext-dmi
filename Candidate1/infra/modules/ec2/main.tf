@@ -27,7 +27,7 @@ resource "aws_instance" "ec2_instance" {
     sudo ./aws/install
 
     # Clone the specified GitHub repository
-    git clone https://github.com/turbot/ext-dmi.git
+    git clone https://github.com/agenerette/candidate1-ext-dmi.git
 
     # Navigate to the cloned repo directory
     cd ext-dmi/Candidate1
