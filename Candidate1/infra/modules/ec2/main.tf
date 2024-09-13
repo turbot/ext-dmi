@@ -30,7 +30,7 @@ resource "aws_instance" "ec2_instance" {
     git clone https://github.com/turbot/ext-dmi.git
 
     # Navigate to the cloned repo directory
-    cd ext-dmi\Candidate1
+    cd ext-dmi/Candidate1
 
     # Run the Python script in dry-run mode and save the output to /root/script_output.log
     python3 list_and_tag_buckets.py > ./script_output.log 2>&1
