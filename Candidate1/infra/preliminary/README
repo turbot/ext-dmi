@@ -1,0 +1,8 @@
+NOTE: it's only meant that terraform plan be run from this folder, once.
+    So, though null_resource.delete_default_vpc has:
+
+        triggers = {
+            always_run = timestamp()
+        }
+
+  this resource should only need to be provisioned once. 
